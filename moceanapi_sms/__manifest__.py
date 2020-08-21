@@ -6,11 +6,6 @@
     "author": "MoceanAPI Developer",
     "license" : "LGPL-3",
     "images": [
-        "images/connection_list.png",
-        "images/connection_create.png",
-        "images/sms_queue_list.png",
-        "images/sms_create.png",
-        "images/sms_history.png"
     ],
     "description": """
         To get started, go to our website https://moceanapi.com to register a new account to claim 20 free credit.
@@ -28,7 +23,7 @@
     "active": False,
     "installable": True,
     "application": True,
-    "images": ["images/icon.png"]
+    "images": ["static/description/banner.png"]
 }
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
