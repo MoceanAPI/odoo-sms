@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_moceansms_smsconnection_global","moceansms.smsconnection Global","moceanapi_sms.model_moceansms_smsconnection","","1","1","1","1"
+"access_moceansms_smsqueue_global","moceansms.smsqueue Global","moceanapi_sms.model_moceansms_smsqueue","","1","1","1","1"
+"access_moceansms_smshistory_global","moceansms.smshistory Global","moceanapi_sms.model_moceansms_smshistory","","1","","",""
