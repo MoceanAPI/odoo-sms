@@ -47,10 +47,10 @@
             <field name="arch" type="xml">
                 <form string="Create SMS">
                     <sheet>
-                        <group>                      
+                        <group>
                             <field name="connection_id" select="1" />
                             <field name="recipient" />
-                            <field name="message" />                
+                            <field name="message" />
                         </group>
                     </sheet>
                 </form>
@@ -61,12 +61,12 @@
             <field name="name">sms_queue</field>
             <field name="model">moceansms.smsqueue</field>
             <field name="priority" eval="8" />
-            <field name="arch" type="xml">    
+            <field name="arch" type="xml">
                 <tree string="SMS Queue">
-                    <field name="action_time" select="1" />     
+                    <field name="action_time" select="1" />
                     <field name="recipient" select="1" />
                     <field name="connection_id" select="1" />
-                    <field name="message" select="1" />                    
+                    <field name="message" select="1" />
                     <field name="state" select="1" />
                 </tree>
             </field>
@@ -80,18 +80,18 @@
         </record>
 
         <menuitem name="Send SMS" id="menu_sms_queue" parent="root_menu" action="action_sms_queue" sequence="2"/>
-        
+
 
         <record model="ir.ui.view" id="sms_history_tree">
             <field name="name">sms_history</field>
             <field name="model">moceansms.smshistory</field>
             <field name="priority" eval="8" />
-            <field name="arch" type="xml">    
+            <field name="arch" type="xml">
                 <tree string="SMS Queue">
                     <field name="sent_time" select="1" />
                     <field name="user_id" select="1" />
                     <field name="recipient" select="1" />
-                    <field name="message" select="1" />                    
+                    <field name="message" select="1" />
                     <field name="state" select="1" />
                 </tree>
             </field>
@@ -103,9 +103,17 @@
             <field name="view_mode">tree</field>
             <field name="view_id" ref="sms_history_tree" />
         </record>
-        
+
         <menuitem name="SMS History" id="menu_sms_history" parent="root_menu" action="action_sms_history" sequence="2"/>
 
+        <record id="feedback_link" model="ir.actions.act_url">
+                <field name="name">Feedback</field>
+                <field name="type">ir.actions.act_url</field>
+                <field name="target">new</field>
+                <field name="url">https://bit.ly/3OVWB1u</field>
+        </record>
+
+         <menuitem name="Send us a Feedback!" id="feedback" parent="root_menu" action="feedback_link" sequence="2"/>
 
     </data>
 </openerp>

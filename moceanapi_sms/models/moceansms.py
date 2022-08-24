@@ -44,7 +44,7 @@ class SMSQueue(models.Model):
     action_time = fields.Datetime(
         'Action Time', readonly=True,  default=fields.Datetime.now())
     message = fields.Text(string="Message")
-    recipient = fields.text(string="Recipient",help="Allow send to multiple recipient. Put (,) in between phone number.")
+    recipient = fields.Text(string="Recipient",help="Allow send to multiple recipient. Put (,) in between phone number.")
     connection_id = fields.Many2one("moceansms.smsconnection",
                                     "Connection"
                                     )
@@ -72,10 +72,10 @@ class SMSQueue(models.Model):
 
         pending_sms = self.env["moceansms.smsqueue"].search(
             [("reserve_key", "=", unique_key)])
-      
+
 
         for sms in pending_sms:
-            
+
             params = {
                 "mocean-api-key": sms.connection_id.api_key,
                 "mocean-api-secret": sms.connection_id.api_secret,
@@ -100,7 +100,7 @@ class SMSQueue(models.Model):
 
     def send(self, data):
         url = 'https://rest.moceanapi.com/rest/2/sms'
-    
+
         try:
             res = requests.post(url, data=data)
             res_data = res.json()

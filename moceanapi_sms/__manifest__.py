@@ -15,10 +15,11 @@
     "category": "Tools",
     "demo": [],
     "data": [
+        "view/assets.xml",
         "security/security.xml",
         "security/ir.model.access.csv",
         "view/moceansms.xml",
-        "moceansms_data.xml"            
+        "moceansms_data.xml"
     ],
     "active": False,
     "installable": True,
