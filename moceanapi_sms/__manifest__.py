@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "MoceanAPI SMS",
+    "name": "MoceanAPI Send SMS",
     "version": "18.0.0.0",
     "depends": ["base","mail"],
     "author": "MoceanAPI Developer",
