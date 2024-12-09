@@ -8,7 +8,7 @@
     "images": [
     ],
     "description": """
-        To get started, go to our website https://moceanapi.com to register a new account to claim 20 free credit.
+        To get started, go to our website https://moceanapi.com to register a new account to claim 20 free credits.
 
     """,
     "website": "https://moceanapi.com",
