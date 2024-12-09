@@ -1,34 +1,30 @@
+# -*- coding: utf-8 -*-
 {
     "name": "MoceanAPI SMS",
-    "version": "17.0",
-    "summary": "SMS integration with MoceanAPI",
+    "version": "17.0.0.0",
+    "depends": ["base","mail"],
+    "author": "MoceanAPI Developer",
+    "license" : "LGPL-3",
+    "images": [
+    ],
     "description": """
         To get started, go to our website https://moceanapi.com to register a new account to claim 20 free credits.
+
     """,
-    "author": "MoceanAPI Developer",
     "website": "https://moceanapi.com",
-    "license": "LGPL-3",
     "category": "Tools",
-    "depends": ["base", "mail", "web"],
+    "demo": [],
     "data": [
+        "view/assets.xml",
         "security/security.xml",
         "security/ir.model.access.csv",
         "view/moceansms.xml",
-        "moceansms_data.xml",
+        "moceansms_data.xml"
     ],
-    "assets": {
-        "web.assets_backend": [
-            "moceanapi_sms/static/src/css/main.css",
-            "moceanapi_sms/static/src/css/cookieconsent.min.css",
-            "moceanapi_sms/static/src/js/cookieconsent.min.js",
-            "moceanapi_sms/static/src/js/yandex.js",
-        ],
-        'web.assets_qweb': [
-            'moceanapi_sms/static/src/xml/*.xml',
-        ],
-    },
-    "images": ["static/description/banner.png"],
+    "active": False,
     "installable": True,
     "application": True,
-    "auto_install": False,
+    "images": ["static/description/banner.png"]
 }
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
