@@ -1,6 +1,6 @@
 {
     "name": "MoceanAPI SMS",
-    "version": "18.0",
+    "version": "18.0.0.0",
     "summary": "SMS integration with MoceanAPI",
     "description": """
         To get started, go to our website https://moceanapi.com to register a new account to claim 20 free credits.
